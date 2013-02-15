@@ -1,0 +1,39 @@
+1.1 - visualizar clientes
+
+    Client
+
+    Client.Name
+
+1.2 - editar clientes
+
+    mobile: long tap, open keyboard
+    web: double click
+    
+1.3 - criar clientes
+
+    last item of the list will be a blank input with an ok button by the side
+
+
+2.1 - visualizar transações (do cliente)
+
+    Transaction
+    Payment : Transaction
+    Purchase : Transaction
+
+    Transaction.Date
+    Transaction.Value
+    Purchase.Status { Placed, Delivered }
+    Payment.Status { Pending, Paid, Cancelled }
+
+    ordenadas por data
+    status?
+
+
+2.2 - criar compra
+
+
+2.2 - criar venda
+
+        
+
+    
