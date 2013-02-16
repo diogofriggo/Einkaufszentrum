@@ -43,6 +43,13 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
+    <Reference Include="Raven.Abstractions">
+      <HintPath>..\packages\RavenDB.Client.2.0.2261\lib\net40\Raven.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Client.Lightweight">
+      <HintPath>..\packages\RavenDB.Client.2.0.2261\lib\net40\Raven.Client.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -89,10 +96,10 @@
     <Content Include="Assets\.sencha\app\plugin.xml" />
     <Content Include="Assets\.sencha\workspace\plugin.xml" />
     <Content Include="Assets\app.js" />
+    <Content Include="Assets\app\controller\Clients.js" />
     <Content Include="Assets\app\model\Client.js" />
     <Content Include="Assets\app\store\Clients.js" />
     <Content Include="Assets\app\view\client\List.js" />
-    <Content Include="Assets\app\view\Main.js" />
     <Content Include="Assets\build.xml" />
     <Content Include="Assets\index.html" />
     <Content Include="Assets\resources\css\app.css" />
@@ -1090,6 +1097,7 @@
     <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RavenController.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1287,7 +1295,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\app\controller\" />
     <Folder Include="Assets\app\profile\" />
   </ItemGroup>
   <ItemGroup>
