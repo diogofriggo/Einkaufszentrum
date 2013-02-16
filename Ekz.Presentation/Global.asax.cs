@@ -14,6 +14,23 @@ namespace Dpx.Presentation
 {
     public class MvcApplication : System.Web.HttpApplication
     {
+        public MvcApplication()
+        {
+            BeginRequest += (sender, args) =>
+            {
+                HttpContext.Current.Items["CurrentRequestRavenSession"] = RavenController.Store.OpenSession();
+            };
+
+            EndRequest += (sender, args) =>
+            {
+                using (var session = (IDocumentSession)HttpContext.Current.Items["CurrentRequestRavenSession"])
+                {
+                    if (session == null || Server.GetLastError() != null) return;
+                    session.SaveChanges();
+                }
+            };
+        }
+
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
