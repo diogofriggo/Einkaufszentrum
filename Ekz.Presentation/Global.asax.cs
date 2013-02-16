@@ -17,8 +17,8 @@ namespace Dpx.Presentation
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-            FilterConfig.Configure(GlobalFilters.Filters);
-            RouteConfig.Configure(RouteTable.Routes);
+            FilterConfiguration.Configure(GlobalFilters.Filters);
+            RouteConfiguration.Configure(RouteTable.Routes);
             //RavenDbConfig.Configure();
         }
     }
