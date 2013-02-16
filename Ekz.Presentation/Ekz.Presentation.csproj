@@ -89,6 +89,9 @@
     <Content Include="Assets\.sencha\app\plugin.xml" />
     <Content Include="Assets\.sencha\workspace\plugin.xml" />
     <Content Include="Assets\app.js" />
+    <Content Include="Assets\app\model\Client.js" />
+    <Content Include="Assets\app\store\Clients.js" />
+    <Content Include="Assets\app\view\client\List.js" />
     <Content Include="Assets\app\view\Main.js" />
     <Content Include="Assets\build.xml" />
     <Content Include="Assets\index.html" />
@@ -1084,6 +1087,7 @@
     <Compile Include="Configuration\FilterConfiguration.cs" />
     <Compile Include="Configuration\RavenDbConfiguration.cs" />
     <Compile Include="Configuration\RouteConfiguration.cs" />
+    <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RavenController.cs" />
     <Compile Include="Global.asax.cs">
@@ -1284,9 +1288,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\app\controller\" />
-    <Folder Include="Assets\app\model\" />
     <Folder Include="Assets\app\profile\" />
-    <Folder Include="Assets\app\store\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ekz.Domain\Ekz.Domain.csproj">
+      <Project>{522e7db2-b605-4bda-8c98-99daaf13dc4d}</Project>
+      <Name>Ekz.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

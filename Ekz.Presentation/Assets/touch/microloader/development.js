@@ -15,7 +15,7 @@
         name: "Ekz",
         root: "Assets",
         js: [
-            { path: "touch/sencha-touch-debug.js", "x-bootstrap": true },
+            { path: "touch/sencha-touch-all-debug.js", "x-bootstrap": true },
             { path: "app.js", bundle: true, update: "delta" }
         ],
         css: [
