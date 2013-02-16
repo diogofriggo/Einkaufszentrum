@@ -5,8 +5,8 @@ using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
-//using Raven.Client;
-//using Raven.Client.Document;
+using Raven.Client;
+using Raven.Client.Document;
 using Dpx.Presentation.Configuration;
 using Dpx.Presentation.Controllers;
 
@@ -19,7 +19,7 @@ namespace Dpx.Presentation
             AreaRegistration.RegisterAllAreas();
             FilterConfiguration.Configure(GlobalFilters.Filters);
             RouteConfiguration.Configure(RouteTable.Routes);
-            //RavenDbConfig.Configure();
+            RavenDbConfiguration.Configure();
         }
     }
 }

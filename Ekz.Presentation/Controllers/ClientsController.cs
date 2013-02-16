@@ -1,4 +1,5 @@
 ﻿using Ekz.Domain;
+using Ekz.Presentation.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -65,7 +66,13 @@ namespace Dpx.Presentation.Controllers
         public JsonResult Index()
         {
             var clients = names.Select((x, i) => new Client { Id = i, Name = x });
-            return Json(clients, JsonRequestBehavior.AllowGet);
+            return Json(clients);
+        }
+
+        public JsonResult Populate()
+        {
+            names.ForEach((x, i) => Session.Store(new Client { Id = i, Name = x }));
+            return Json(string.Empty);
         }
     }
 }

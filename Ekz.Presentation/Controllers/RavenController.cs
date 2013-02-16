@@ -1,4 +1,4 @@
-﻿//using Raven.Client;
+﻿using Raven.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,12 +9,12 @@ namespace Dpx.Presentation.Controllers
 {
     public abstract class RavenController : Controller
     {
-        //public static IDocumentStore Store { get; set; }
-        //public IDocumentSession Session { get; set; }
+        public static IDocumentStore Store { get; set; }
+        public IDocumentSession Session { get; set; }
 
         protected override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            //Session = (IDocumentSession)HttpContext.Items["CurrentRequestRavenSession"];
+            Session = (IDocumentSession)HttpContext.Items["CurrentRequestRavenSession"];
         }
 
         protected new JsonResult Json(object data) 
