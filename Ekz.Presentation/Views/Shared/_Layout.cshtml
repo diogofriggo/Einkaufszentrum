@@ -2,12 +2,10 @@
 <html manifest="" lang="en-US">
     <head>
         <meta charset="utf-8">
-        <title>EKZ</title>
-        @RenderSection("Stylesheets")
+        @RenderSection("Head", required: false)
     </head>
 
     <body>
         @RenderBody()
-        @RenderSection("Javascripts")
     </body>
 </html>

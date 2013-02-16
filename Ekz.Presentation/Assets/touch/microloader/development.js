@@ -12,14 +12,15 @@
     }
 
     var options = {
-        name: "MyApp",
+        name: "Ekz",
         root: "Assets",
         js: [
             { path: "touch/sencha-touch-debug.js", "x-bootstrap": true },
             { path: "app.js", bundle: true, update: "delta" }
         ],
         css: [
-            { path: "resources/css/app.css", update: "delta" }
+            { path: "resources/css/app.css", update: "delta" },
+            { path: "resources/css/ekz.css" }
         ],
         appCache: {
             cache: ["index.html"],
