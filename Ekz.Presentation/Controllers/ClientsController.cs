@@ -63,15 +63,21 @@ namespace Dpx.Presentation.Controllers
             "Cordie Watley"
         };
 
-        public JsonResult Index()
+        public JsonResult IndexLocal()
         {
             var clients = names.Select((x, i) => new Client { Id = i, Name = x });
             return Json(clients);
         }
 
+        public JsonResult Index()
+        {
+            var clients = Session.Query<Client>();
+            return Json(clients);
+        }
+
         public JsonResult Populate()
         {
-            names.ForEach((x, i) => Session.Store(new Client { Id = i, Name = x }));
+            names.ForEach((x, i) => Session.Store(new Client { Name = x }));
             return Json(string.Empty);
         }
     }
