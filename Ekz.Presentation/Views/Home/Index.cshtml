@@ -1,1 +1,14 @@
-﻿<p>Einfaukszentrum</p>
+﻿@section Stylesheets {
+    <link rel="stylesheet" href="@Url.Content("~/Assets/Stylesheets/app.css")" />
+}
+
+@section Javascripts {
+    <script id="microloader" type="text/javascript" src="@Url.Content("~/Assets/Javascripts/touch/microloader/development.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Assets/Javascripts/app/view/Main.js")"></script>
+}
+
+<div id="appLoadingIndicator">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>

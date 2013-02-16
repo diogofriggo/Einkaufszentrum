@@ -1,11 +1,13 @@
 ﻿<!DOCTYPE html>
-<html>
+<html manifest="" lang="en-US">
     <head>
         <meta charset="utf-8">
         <title>EKZ</title>
+        @RenderSection("Stylesheets")
     </head>
 
     <body>
         @RenderBody()
+        @RenderSection("Javascripts")
     </body>
 </html>
