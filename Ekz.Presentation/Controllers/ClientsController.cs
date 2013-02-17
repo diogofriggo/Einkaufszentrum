@@ -1,5 +1,6 @@
 ﻿using Ekz.Domain;
 using Ekz.Presentation.Extensions;
+using Raven.Client.Connection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -79,6 +80,12 @@ namespace Dpx.Presentation.Controllers
         {
             names.ForEach((x, i) => Session.Store(new Client { Name = x }));
             return Json(string.Empty);
+        }
+
+        public JsonResult Auth() 
+        {
+            var json = ((ServerClient)Store.DatabaseCommands).CreateRequest("GET", "/debug/user-info").ReadResponseJson();
+            return Json(json);
         }
     }
 }

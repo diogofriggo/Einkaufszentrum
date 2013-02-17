@@ -1,0 +1,2 @@
+if localhost:8080 is assigned raven studio goes to the next available port in 1 increments
+how to get permission of an embedded db on raven studio
