@@ -82,6 +82,12 @@ namespace Dpx.Presentation.Controllers
             return Json(string.Empty);
         }
 
+        public JsonResult Erase()
+        {
+            Session.Query<Client>().ForEach(x => Session.Delete<Client>(x));
+            return Json(string.Empty);
+        }
+
         public JsonResult Auth() 
         {
             var json = ((ServerClient)Store.DatabaseCommands).CreateRequest("GET", "/debug/user-info").ReadResponseJson();

@@ -13,10 +13,15 @@ namespace Dpx.Presentation.Configuration
     {
         public static void Configure()
         {
-            //NonAdminHttp.EnsureCanListenToWhenInNonAdminContext(8088);
-            RavenController.Store = new DocumentStore 
-            { 
-                ConnectionStringName = "RavenDB"
+            //NonAdminHttp.EnsureCanListenToWhenInNonAdminContext(8080);
+            //DataDirectory = "App_Data"
+            //UseEmbeddedHttpServer = true
+            //ConnectionStringName = "RavenDBEmbedded"
+            //ConnectionStringName = "RavenDBConsole"
+            //ConnectionStringName = "RavenDBIIS"
+            RavenController.Store = new EmbeddableDocumentStore 
+            {
+                DataDirectory = "App_Data"
             }.Initialize();
         }
     }
