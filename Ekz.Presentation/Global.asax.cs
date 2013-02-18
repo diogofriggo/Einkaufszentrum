@@ -20,7 +20,7 @@ namespace Dpx.Presentation
             {
                 HttpContext.Current.Items["CurrentRequestRavenSession"] = RavenController.Store.OpenSession();
             };
-
+            
             EndRequest += (sender, args) =>
             {
                 using (var session = (IDocumentSession)HttpContext.Current.Items["CurrentRequestRavenSession"])

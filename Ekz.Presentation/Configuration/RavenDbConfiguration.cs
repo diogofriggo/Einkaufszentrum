@@ -19,9 +19,9 @@ namespace Dpx.Presentation.Configuration
             //ConnectionStringName = "RavenDBEmbedded"
             //ConnectionStringName = "RavenDBConsole"
             //ConnectionStringName = "RavenDBIIS"
-            RavenController.Store = new EmbeddableDocumentStore 
+            RavenController.Store = new DocumentStore 
             {
-                DataDirectory = "App_Data"
+                ConnectionStringName = "RavenDBConsole"
             }.Initialize();
         }
     }
