@@ -170,6 +170,6 @@ pip-log.txt
 
 Docs/Sencha/
 App_Data
-.pubxml
 Assets/archive/
 .sass-*
+PublishProfiles/
