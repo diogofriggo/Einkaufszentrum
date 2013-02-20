@@ -1,4 +1,4 @@
-<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1019" measuredH="707" mockupW="999" mockupH="666">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1810" measuredH="707" mockupW="1790" mockupH="669">
   <controls>
     <control controlID="4" controlTypeID="com.balsamiq.mockups::iPhone" x="20" y="120" w="496" h="587" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="-1"/>
     <control controlID="7" controlTypeID="com.balsamiq.mockups::iPhoneMenu" x="145" y="268" w="229" h="-1" measuredW="215" measuredH="300" zOrder="1" locked="false" isInGroup="-1">
@@ -6,31 +6,26 @@
         <text>Alana%0AB%E1rbara%0ACarine%0AD%E9bora%0AEliane%0AJulia%0AKarla%0ALuciana%0AMariana%0ANatalia</text>
       </controlProperties>
     </control>
-    <control controlID="14" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="374" y="268" w="-1" h="300" measuredW="16" measuredH="100" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="374" y="268" w="-1" h="300" measuredW="16" measuredH="100" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <value>31</value>
       </controlProperties>
     </control>
-    <control controlID="16" controlTypeID="com.balsamiq.mockups::iPhone" x="523" y="120" w="496" h="587" measuredW="282" measuredH="510" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::CallOut" x="111" y="38" w="314" h="53" measuredW="578" measuredH="39" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
-        <bgPattern>allWhite</bgPattern>
-        <orientation>portrait</orientation>
+        <text>UST%20001%20-%20Como%20vendedor%20eu%20quero%20visualizar%2C%20incluir%2C%20alterar%20e%20excluir%20todos%20os%20meus%20clientes</text>
       </controlProperties>
     </control>
-    <control controlID="17" controlTypeID="com.balsamiq.mockups::iPhoneMenu" x="648" y="268" w="229" h="-1" measuredW="215" measuredH="300" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::iPhoneMenu" x="1020" y="151" w="-1" h="-1" measuredW="215" measuredH="383" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Alana%0AB%E1rbara%0ACarine%0AD%E9bora%0AEliane%0AJulia%0AKarla%0ALuciana%0AMariana%0ANatalia</text>
+        <text>A%20Simple%20Label%0A+%20Add%20and%20sub-menu%2C%20%3E%0A-%20Delete%5Cr%28Cancel%29%0ATwo%20Labels%5C%2C%20and%20a%20comma%2C%20yup%0Av%20A%20Checkmark%2C%20%28%3E%29%0A*%20A%20Bullet%2C%20%3D%0A_%20Space%20for%20an%20icon%0A__%20Space%20for%20a%20big%20icon%0AOn%20button%2C%20ON%0AOff%20button%2C%20OFF%0A%20%0Av%20An%20empty%20row%2C%20%28above%29</text>
       </controlProperties>
     </control>
-    <control controlID="18" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="877" y="268" w="-1" h="300" measuredW="16" measuredH="100" zOrder="4" locked="false" isInGroup="-1"/>
-    <control controlID="20" controlTypeID="com.balsamiq.mockups::CallOut" x="193" y="41" w="150" h="40" measuredW="150" measuredH="40" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::FormattingToolbar" x="687" y="151" w="-1" h="-1" measuredW="270" measuredH="29" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::VSplitter" x="660" y="446" w="-1" h="-1" measuredW="100" measuredH="11" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::DataGrid" x="1470" y="184" w="-1" h="-1" measuredW="340" measuredH="195" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>1%20-%20Selecionar%20cliente</text>
-      </controlProperties>
-    </control>
-    <control controlID="22" controlTypeID="com.balsamiq.mockups::CallOut" x="693" y="41" w="-1" h="-1" measuredW="156" measuredH="40" zOrder="6" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>2%20-%20Visualizar%20pedidos</text>
+        <text>Name%5Cr%28job%20title%29%20%5E%2C%20Age%20%5Ev%2C%20Nickname%2C%20Employee%20v%0AGiacomo%20Guilizzoni%5CrFounder%20%26%20CEO%2C%2036%2C%20Peldi%2C%20%5Bx%5D%0AMarco%20Botton%5CrTuttofare%2C%2034%2C%20%2C%20%5Bx%5D%0AMariah%20Maclachlan%5CrBetter%20Half%2C%2037%2C%20Patata%2C%20%5Bx%5D%0AValerie%20Liberty%5CrHead%20Chef%2C%20%3A%29%2C%20Val%2C%20%5Bx%5D%0AGuido%20Jack%20Guilizzoni%2C%206%2C%20The%20Guids%2C%20%5B%5D%0A%7B65L%2C%200R%2C%2035%2C%200C%7D</text>
       </controlProperties>
     </control>
   </controls>

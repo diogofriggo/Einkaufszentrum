@@ -1,0 +1,60 @@
+sencha tools + ant tasks
+
+continuous integration (commit github -> deploy to winhost)
+
+IDEAL WORKFLOW:
+
+when I build everyday
+
+when I deploy
+
+github (web) to cruise control (local server)
+github (web) to cruise control (hosted somewhere)
+
+
+github push, post-receive hook calls Jenkins (hosted where PQP)
+  Jenkins gets the files and invokes MSBuild/NAnt/Maven
+    1 - MSBuild
+      Sencha build
+        merge & minify CSS
+        merge & minify JS
+        set index.html to production mode
+      C# build
+        NUnit + Moq + SpecFlow
+        FxCop
+      WinHost
+        erase previous files
+        FTP new files (Jenkins deploys the Site already compiled)
+    2 - visual feedback
+    3 - e-mail to each dev
+
+ignore Sencha SDK: sencha sdk is a huge folder with lots of files that'll never change
+so it's importnat to ignore these files for a much faster deploy
+
+https://trid-ci.org
+list projects on the left
+list builds on the center (click for details which open in adjacent tab like travis but more visually appealing)
+if signed in
+  force build on the right
+
+github hook makes request to trid-ci
+trid-ci allows for registering applications
+  required fields:
+    name
+    github hook
+    deploy url
+features
+  sign in with github
+  use NAnt/Maven/MSBuild scripts to do all the magic
+  set to release mode
+  run sencha cmd to build for production
+  auto-publish to configured server (winhost)
+
+neatures:
+  don't save build snapshots
+  erase all files from the server, everything is sent to the hosting server
+
+I wonder if EC2 wouldn't be better suited to cater for our growth in a flexible and cheap manner  
+
+    
+    

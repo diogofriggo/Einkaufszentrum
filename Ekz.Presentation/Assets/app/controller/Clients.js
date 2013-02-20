@@ -8,9 +8,18 @@ Ext.define('Ekz.controller.Clients', {
             list: {
                 initialize: function (list) {
                     list.getStore().load();
+                },
+                itemdoubletap: function (list, index, item, record) {
+                    console.log('doubletapped');
+                    //convert into input
+                },
+                itembeginedit: function () {
+
+                },
+                itemendedit: function () {
+
                 }
             }
         }
-
     }
 });

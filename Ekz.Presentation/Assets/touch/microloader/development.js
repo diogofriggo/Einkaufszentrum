@@ -20,7 +20,7 @@
         ],
         css: [
             { path: "resources/css/app.css", update: "delta" },
-            { path: "resources/css/ekz.css" }
+            { path: "resources/css/ekz.css", update: "delta" }
         ],
         appCache: {
             cache: ["index.html"],

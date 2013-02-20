@@ -140,13 +140,19 @@
     <Content Include="Assets\.sencha\app\plugin.xml" />
     <Content Include="Assets\.sencha\workspace\plugin.xml" />
     <Content Include="Assets\app.js" />
-    <Content Include="Assets\app\controller\Clients.js" />
-    <Content Include="Assets\app\model\Client.js" />
-    <Content Include="Assets\app\store\Clients.js" />
-    <Content Include="Assets\app\view\client\List.js" />
+    <Content Include="Assets\app\controller\clients.js" />
+    <Content Include="Assets\app\model\client.js" />
+    <Content Include="Assets\app\store\clients.js" />
+    <Content Include="Assets\app\view\client\card.js" />
+    <Content Include="Assets\app\view\client\title.js" />
+    <Content Include="Assets\app\view\order\card.js" />
+    <Content Include="Assets\app\view\order\title.js" />
+    <Content Include="Assets\app\view\viewport.js" />
+    <Content Include="Assets\app\view\client\list.js" />
     <Content Include="Assets\build.xml" />
     <Content Include="Assets\index.html" />
     <Content Include="Assets\resources\css\app.css" />
+    <Content Include="Assets\resources\css\ekz.css" />
     <Content Include="Assets\resources\icons\Icon%402x.png" />
     <Content Include="Assets\resources\icons\icon-spot~ipad.png" />
     <Content Include="Assets\resources\icons\Icon.png" />
@@ -1130,7 +1136,6 @@
     <Content Include="Assets\touch\src\XTemplateCompiler.js" />
     <Content Include="Assets\touch\src\XTemplateParser.js" />
     <Content Include="Assets\touch\version.txt" />
-    <Content Include="Assets\resources\css\ekz.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -1336,6 +1341,9 @@
     <Content Include="Assets\touch\resources\themes\vendor\compass-recipes\tests\recipes\ui\webfont-icons\s.scss" />
     <Content Include="Assets\touch\resources\themes\vendor\compass-recipes\tests\_tests.scss" />
     <Content Include="Assets\touch\resources\themes\vendor\compass-recipes\VERSION" />
+    <Content Include="App_Data\winhost.keep">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\PublishProfiles\WinHost.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -1345,7 +1353,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Assets\app\profile\" />
   </ItemGroup>
   <ItemGroup>

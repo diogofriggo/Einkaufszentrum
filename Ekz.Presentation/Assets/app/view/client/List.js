@@ -1,13 +1,12 @@
 Ext.define('Ekz.view.client.List', {
     extend: 'Ext.List',
-    xtype: 'clientlist',
+    alias: 'widget.clientlist',
     config: {
         store: 'Clients',
-        fullScreen: true,
         grouped: true,
+        //ui: 'round',
         itemTpl: '{name}',
-        onItemDisclosure: function(record) {
-            Ext.Msg.alert('Tap', record.get('name'), Ext.emptyFn);
-        }
+        onItemDisclosure: function () { }
     }
+
 });
